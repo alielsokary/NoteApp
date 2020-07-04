@@ -8,6 +8,7 @@
 
 #import "SignUpViewController.h"
 #import "Utilities.h"
+@import Firebase;
 
 @interface SignUpViewController ()
 
@@ -26,8 +27,44 @@
 }
 
 - (IBAction)signUpAction:(id)sender {
-
+	if(![self validateAuth]) {
+		return;
+	} else {
+		[self performSignUp];
+	}
 }
+
+- (void)performSignUp {
+	[[FIRAuth auth] createUserWithEmail:_emailTextField.text
+							   password:_passwordTextField.text
+							 completion:^(FIRAuthDataResult * _Nullable authResult,
+										  NSError * _Nullable error) {
+		if (error != nil) {
+			[Utilities showAlert:error.localizedDescription viewController:self];
+		} else {
+			NSLog(@"user is: %@", authResult.user);
+		}
+	}];
+}
+
+- (BOOL)validateAuth {
+	if (!([Utilities vaildateIsEmpty:_emailTextField.text] || [Utilities vaildateIsEmpty:_passwordTextField.text] || [Utilities vaildateIsEmpty:_confirmPasswordTextField.text])) {
+		[Utilities showAlert:@"Please enter all fields." viewController:self];
+		return false;
+	}
+	
+	if (![Utilities validateEmailWithString:_emailTextField.text]) {
+		[Utilities showAlert:@"Please enter vaild email." viewController:self];
+		return false;
+	}
+	
+	if (![_passwordTextField.text isEqualToString:_confirmPasswordTextField.text]) {
+		[Utilities showAlert:@"Password and confirm password are mismatched." viewController:self];
+		return false;
+	}
+	return true;
+}
+
 
 /*
 #pragma mark - Navigation

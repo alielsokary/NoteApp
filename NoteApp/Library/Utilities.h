@@ -17,6 +17,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)styleHollowButton:(UIButton *) button;
 
++ (BOOL)validateEmailWithString:(NSString*)email;
+
++ (BOOL)vaildateIsEmpty:(NSString *)textField;
+
++ (void)showAlert:(NSString *)text viewController:(UIViewController*)VC;
+
 @end
 
 NS_ASSUME_NONNULL_END

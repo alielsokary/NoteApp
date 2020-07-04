@@ -23,4 +23,33 @@
 	button.tintColor = [UIColor colorWithRed: 0.294 green: 0.431 blue: 0.463 alpha: 1.00];
 }
 
++ (BOOL)validateEmailWithString:(NSString*)email {
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:email];
+}
+
++ (BOOL)vaildateIsEmpty:(NSString *)textField {
+	if ([[textField stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]  isEqual: @""]) {
+		return false;
+	}
+	return true;
+}
+
++ (void)showAlert:(NSString *)text viewController:(UIViewController*)VC {
+//	UIWindow* topWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//	topWindow.rootViewController = [UIViewController new];
+//	topWindow.windowLevel = UIWindowLevelAlert + 1;
+//
+	UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alert" message:text preferredStyle:UIAlertControllerStyleAlert];
+
+	[alert addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+	}]];
+
+//	[topWindow makeKeyAndVisible];
+//	[topWindow.rootViewController presentViewController:alert animated:YES completion:nil];
+	[VC presentViewController:alert animated:YES completion:nil];
+}
+
+
 @end
