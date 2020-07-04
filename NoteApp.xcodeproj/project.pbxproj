@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41CA5DB324B0A6AE00676BBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41CA5DB224B0A6AE00676BBC /* GoogleService-Info.plist */; };
 		41EED31124B0914C00945C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31024B0914C00945C94 /* AppDelegate.m */; };
 		41EED31424B0914C00945C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31324B0914C00945C94 /* SceneDelegate.m */; };
 		41EED31724B0914C00945C94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31624B0914C00945C94 /* ViewController.m */; };
@@ -14,11 +15,11 @@
 		41EED31C24B0914D00945C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41EED31B24B0914D00945C94 /* Assets.xcassets */; };
 		41EED31F24B0914D00945C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EED31D24B0914D00945C94 /* LaunchScreen.storyboard */; };
 		41EED32224B0914D00945C94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED32124B0914D00945C94 /* main.m */; };
-		41EED32924B0993900945C94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41EED32824B0993900945C94 /* GoogleService-Info.plist */; };
 		A7632686DFA36DD83FFCE898 /* Pods_NoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF42CAE1EAAD18EEE0F117D5 /* Pods_NoteApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41CA5DB224B0A6AE00676BBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41EED30C24B0914C00945C94 /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EED30F24B0914C00945C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41EED31024B0914C00945C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		41EED31E24B0914D00945C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41EED32024B0914D00945C94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41EED32124B0914D00945C94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		41EED32824B0993900945C94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF30633594EC10B9DD1DF2DE /* Pods-NoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteApp.release.xcconfig"; path = "Target Support Files/Pods-NoteApp/Pods-NoteApp.release.xcconfig"; sourceTree = "<group>"; };
 		E5E18AEA5A4DA5AC9B904BC0 /* Pods-NoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteApp.debug.xcconfig"; path = "Target Support Files/Pods-NoteApp/Pods-NoteApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EF42CAE1EAAD18EEE0F117D5 /* Pods_NoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +70,6 @@
 		41EED30E24B0914C00945C94 /* NoteApp */ = {
 			isa = PBXGroup;
 			children = (
-				41EED32824B0993900945C94 /* GoogleService-Info.plist */,
 				41EED30F24B0914C00945C94 /* AppDelegate.h */,
 				41EED31024B0914C00945C94 /* AppDelegate.m */,
 				41EED31224B0914C00945C94 /* SceneDelegate.h */,
@@ -81,6 +80,7 @@
 				41EED31B24B0914D00945C94 /* Assets.xcassets */,
 				41EED31D24B0914D00945C94 /* LaunchScreen.storyboard */,
 				41EED32024B0914D00945C94 /* Info.plist */,
+				41CA5DB224B0A6AE00676BBC /* GoogleService-Info.plist */,
 				41EED32124B0914D00945C94 /* main.m */,
 			);
 			path = NoteApp;
@@ -163,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41EED31F24B0914D00945C94 /* LaunchScreen.storyboard in Resources */,
-				41EED32924B0993900945C94 /* GoogleService-Info.plist in Resources */,
+				41CA5DB324B0A6AE00676BBC /* GoogleService-Info.plist in Resources */,
 				41EED31C24B0914D00945C94 /* Assets.xcassets in Resources */,
 				41EED31A24B0914C00945C94 /* Main.storyboard in Resources */,
 			);

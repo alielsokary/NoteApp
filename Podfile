@@ -6,6 +6,7 @@ target 'NoteApp' do
   use_frameworks!
 
   # Pods for NoteApp
+	pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
 
