@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		41CA5DB324B0A6AE00676BBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41CA5DB224B0A6AE00676BBC /* GoogleService-Info.plist */; };
+		41CA5DB624B0C65D00676BBC /* OstrichSans-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 41CA5DB424B0C65C00676BBC /* OstrichSans-Heavy.otf */; };
+		41CA5DB724B0C65D00676BBC /* ostrich-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41CA5DB524B0C65D00676BBC /* ostrich-regular.ttf */; };
+		41CA5DBA24B0C73200676BBC /* AvenirNextLTPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 41CA5DB824B0C73200676BBC /* AvenirNextLTPro-Regular.otf */; };
+		41CA5DBB24B0C73200676BBC /* AvenirNextLTPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 41CA5DB924B0C73200676BBC /* AvenirNextLTPro-Bold.otf */; };
+		41CA5DC124B0CE7800676BBC /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA5DC024B0CE7800676BBC /* SignInViewController.m */; };
+		41CA5DC624B0CEA300676BBC /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA5DC524B0CEA300676BBC /* SignUpViewController.m */; };
+		41CA5DCA24B0D05100676BBC /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA5DC924B0D05100676BBC /* Utilities.m */; };
 		41EED31124B0914C00945C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31024B0914C00945C94 /* AppDelegate.m */; };
 		41EED31424B0914C00945C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31324B0914C00945C94 /* SceneDelegate.m */; };
-		41EED31724B0914C00945C94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31624B0914C00945C94 /* ViewController.m */; };
+		41EED31724B0914C00945C94 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31624B0914C00945C94 /* AuthViewController.m */; };
 		41EED31A24B0914C00945C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EED31824B0914C00945C94 /* Main.storyboard */; };
 		41EED31C24B0914D00945C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41EED31B24B0914D00945C94 /* Assets.xcassets */; };
 		41EED31F24B0914D00945C94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EED31D24B0914D00945C94 /* LaunchScreen.storyboard */; };
@@ -20,13 +27,23 @@
 
 /* Begin PBXFileReference section */
 		41CA5DB224B0A6AE00676BBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41CA5DB424B0C65C00676BBC /* OstrichSans-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OstrichSans-Heavy.otf"; sourceTree = "<group>"; };
+		41CA5DB524B0C65D00676BBC /* ostrich-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-regular.ttf"; sourceTree = "<group>"; };
+		41CA5DB824B0C73200676BBC /* AvenirNextLTPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-Regular.otf"; sourceTree = "<group>"; };
+		41CA5DB924B0C73200676BBC /* AvenirNextLTPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AvenirNextLTPro-Bold.otf"; sourceTree = "<group>"; };
+		41CA5DBF24B0CE7800676BBC /* SignInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		41CA5DC024B0CE7800676BBC /* SignInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		41CA5DC424B0CEA300676BBC /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		41CA5DC524B0CEA300676BBC /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		41CA5DC824B0D05100676BBC /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		41CA5DC924B0D05100676BBC /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		41EED30C24B0914C00945C94 /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EED30F24B0914C00945C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41EED31024B0914C00945C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		41EED31224B0914C00945C94 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		41EED31324B0914C00945C94 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		41EED31524B0914C00945C94 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		41EED31624B0914C00945C94 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		41EED31524B0914C00945C94 /* AuthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		41EED31624B0914C00945C94 /* AuthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
 		41EED31924B0914C00945C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41EED31B24B0914D00945C94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41EED31E24B0914D00945C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +66,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41CA5DBC24B0C73700676BBC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41CA5DB524B0C65D00676BBC /* ostrich-regular.ttf */,
+				41CA5DB424B0C65C00676BBC /* OstrichSans-Heavy.otf */,
+				41CA5DB924B0C73200676BBC /* AvenirNextLTPro-Bold.otf */,
+				41CA5DB824B0C73200676BBC /* AvenirNextLTPro-Regular.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		41CA5DBD24B0CE3300676BBC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				41CA5DBE24B0CE5400676BBC /* Auth */,
+				41CA5DC324B0CE8B00676BBC /* SignUp */,
+				41CA5DC224B0CE7C00676BBC /* SignIn */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		41CA5DBE24B0CE5400676BBC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				41EED31524B0914C00945C94 /* AuthViewController.h */,
+				41EED31624B0914C00945C94 /* AuthViewController.m */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		41CA5DC224B0CE7C00676BBC /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				41CA5DBF24B0CE7800676BBC /* SignInViewController.h */,
+				41CA5DC024B0CE7800676BBC /* SignInViewController.m */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		41CA5DC324B0CE8B00676BBC /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				41CA5DC424B0CEA300676BBC /* SignUpViewController.h */,
+				41CA5DC524B0CEA300676BBC /* SignUpViewController.m */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		41CA5DC724B0CFF100676BBC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				41CA5DC824B0D05100676BBC /* Utilities.h */,
+				41CA5DC924B0D05100676BBC /* Utilities.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		41EED30324B0914C00945C94 = {
 			isa = PBXGroup;
 			children = (
@@ -70,17 +144,18 @@
 		41EED30E24B0914C00945C94 /* NoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				41CA5DC724B0CFF100676BBC /* Library */,
+				41CA5DBD24B0CE3300676BBC /* Auth */,
 				41EED30F24B0914C00945C94 /* AppDelegate.h */,
 				41EED31024B0914C00945C94 /* AppDelegate.m */,
 				41EED31224B0914C00945C94 /* SceneDelegate.h */,
 				41EED31324B0914C00945C94 /* SceneDelegate.m */,
-				41EED31524B0914C00945C94 /* ViewController.h */,
-				41EED31624B0914C00945C94 /* ViewController.m */,
 				41EED31824B0914C00945C94 /* Main.storyboard */,
 				41EED31B24B0914D00945C94 /* Assets.xcassets */,
 				41EED31D24B0914D00945C94 /* LaunchScreen.storyboard */,
 				41EED32024B0914D00945C94 /* Info.plist */,
 				41CA5DB224B0A6AE00676BBC /* GoogleService-Info.plist */,
+				41CA5DBC24B0C73700676BBC /* Resources */,
 				41EED32124B0914D00945C94 /* main.m */,
 			);
 			path = NoteApp;
@@ -164,7 +239,11 @@
 			files = (
 				41EED31F24B0914D00945C94 /* LaunchScreen.storyboard in Resources */,
 				41CA5DB324B0A6AE00676BBC /* GoogleService-Info.plist in Resources */,
+				41CA5DBB24B0C73200676BBC /* AvenirNextLTPro-Bold.otf in Resources */,
+				41CA5DB724B0C65D00676BBC /* ostrich-regular.ttf in Resources */,
+				41CA5DBA24B0C73200676BBC /* AvenirNextLTPro-Regular.otf in Resources */,
 				41EED31C24B0914D00945C94 /* Assets.xcassets in Resources */,
+				41CA5DB624B0C65D00676BBC /* OstrichSans-Heavy.otf in Resources */,
 				41EED31A24B0914C00945C94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,9 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41EED31724B0914C00945C94 /* ViewController.m in Sources */,
+				41CA5DC124B0CE7800676BBC /* SignInViewController.m in Sources */,
+				41EED31724B0914C00945C94 /* AuthViewController.m in Sources */,
+				41CA5DC624B0CEA300676BBC /* SignUpViewController.m in Sources */,
 				41EED31124B0914C00945C94 /* AppDelegate.m in Sources */,
 				41EED32224B0914D00945C94 /* main.m in Sources */,
+				41CA5DCA24B0D05100676BBC /* Utilities.m in Sources */,
 				41EED31424B0914C00945C94 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

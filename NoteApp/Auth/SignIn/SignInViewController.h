@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SignInViewController.h
 //  NoteApp
 //
 //  Created by Ali Elsokary on 7/4/20.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface SignInViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
