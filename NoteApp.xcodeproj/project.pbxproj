@@ -15,8 +15,8 @@
 		41CA5DC124B0CE7800676BBC /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA5DC024B0CE7800676BBC /* SignInViewController.m */; };
 		41CA5DC624B0CEA300676BBC /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA5DC524B0CEA300676BBC /* SignUpViewController.m */; };
 		41CA5DCA24B0D05100676BBC /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA5DC924B0D05100676BBC /* Utilities.m */; };
+		41CA5DCE24B1010900676BBC /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA5DCD24B1010800676BBC /* NotesViewController.m */; };
 		41EED31124B0914C00945C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31024B0914C00945C94 /* AppDelegate.m */; };
-		41EED31424B0914C00945C94 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31324B0914C00945C94 /* SceneDelegate.m */; };
 		41EED31724B0914C00945C94 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31624B0914C00945C94 /* AuthViewController.m */; };
 		41EED31A24B0914C00945C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EED31824B0914C00945C94 /* Main.storyboard */; };
 		41EED31C24B0914D00945C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41EED31B24B0914D00945C94 /* Assets.xcassets */; };
@@ -37,11 +37,11 @@
 		41CA5DC524B0CEA300676BBC /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		41CA5DC824B0D05100676BBC /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		41CA5DC924B0D05100676BBC /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		41CA5DCC24B1010800676BBC /* NotesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		41CA5DCD24B1010800676BBC /* NotesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
 		41EED30C24B0914C00945C94 /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EED30F24B0914C00945C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41EED31024B0914C00945C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		41EED31224B0914C00945C94 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		41EED31324B0914C00945C94 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		41EED31524B0914C00945C94 /* AuthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
 		41EED31624B0914C00945C94 /* AuthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
 		41EED31924B0914C00945C94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +123,15 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
+		41CA5DCB24B100E900676BBC /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				41CA5DCC24B1010800676BBC /* NotesViewController.h */,
+				41CA5DCD24B1010800676BBC /* NotesViewController.m */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
 		41EED30324B0914C00945C94 = {
 			isa = PBXGroup;
 			children = (
@@ -144,12 +153,11 @@
 		41EED30E24B0914C00945C94 /* NoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				41CA5DCB24B100E900676BBC /* Notes */,
 				41CA5DC724B0CFF100676BBC /* Library */,
 				41CA5DBD24B0CE3300676BBC /* Auth */,
 				41EED30F24B0914C00945C94 /* AppDelegate.h */,
 				41EED31024B0914C00945C94 /* AppDelegate.m */,
-				41EED31224B0914C00945C94 /* SceneDelegate.h */,
-				41EED31324B0914C00945C94 /* SceneDelegate.m */,
 				41EED31824B0914C00945C94 /* Main.storyboard */,
 				41EED31B24B0914D00945C94 /* Assets.xcassets */,
 				41EED31D24B0914D00945C94 /* LaunchScreen.storyboard */,
@@ -297,13 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41CA5DCE24B1010900676BBC /* NotesViewController.m in Sources */,
 				41CA5DC124B0CE7800676BBC /* SignInViewController.m in Sources */,
 				41EED31724B0914C00945C94 /* AuthViewController.m in Sources */,
 				41CA5DC624B0CEA300676BBC /* SignUpViewController.m in Sources */,
 				41EED31124B0914C00945C94 /* AppDelegate.m in Sources */,
 				41EED32224B0914D00945C94 /* main.m in Sources */,
 				41CA5DCA24B0D05100676BBC /* Utilities.m in Sources */,
-				41EED31424B0914C00945C94 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,13 +455,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV394V58Y3;
 				INFOPLIST_FILE = NoteApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mag.NoteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,13 +474,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV394V58Y3;
 				INFOPLIST_FILE = NoteApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mag.NoteApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

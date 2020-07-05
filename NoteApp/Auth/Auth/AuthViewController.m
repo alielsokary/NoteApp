@@ -18,11 +18,8 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	
 	[Utilities styleFilledButton:_signInButton];
 	[Utilities styleHollowButton:_signUpButton];
-	
 }
-
 
 @end

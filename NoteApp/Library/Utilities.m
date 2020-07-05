@@ -36,19 +36,18 @@
 	return true;
 }
 
-+ (void)showAlert:(NSString *)text viewController:(UIViewController*)VC {
-//	UIWindow* topWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//	topWindow.rootViewController = [UIViewController new];
-//	topWindow.windowLevel = UIWindowLevelAlert + 1;
-//
++ (void)showAlert:(NSString *)text viewController:(UIViewController*)vc {
 	UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alert" message:text preferredStyle:UIAlertControllerStyleAlert];
-
 	[alert addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
 	}]];
+	[vc presentViewController:alert animated:YES completion:nil];
+}
 
-//	[topWindow makeKeyAndVisible];
-//	[topWindow.rootViewController presentViewController:alert animated:YES completion:nil];
-	[VC presentViewController:alert animated:YES completion:nil];
++ (void)navigateToViewControllerWithIdentifier:(NSString *)identifier fromViewController:(UIViewController *)vc {
+	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+	UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
+	vc.view.window.rootViewController = viewController;
+	[vc.view.window makeKeyAndVisible];
 }
 
 

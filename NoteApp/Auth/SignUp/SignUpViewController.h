@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "AuthViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SignUpViewController : UIViewController
+@interface SignUpViewController : AuthViewController
 
 @end
 

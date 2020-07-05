@@ -11,12 +11,10 @@
 @import Firebase;
 
 @interface SignUpViewController ()
-
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *confirmPasswordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
-
 @end
 
 @implementation SignUpViewController
@@ -42,7 +40,8 @@
 		if (error != nil) {
 			[Utilities showAlert:error.localizedDescription viewController:self];
 		} else {
-			NSLog(@"user is: %@", authResult.user);
+			NSLog(@"user is: %@", authResult.user.uid);
+			[Utilities navigateToViewControllerWithIdentifier:@"NotesViewController" fromViewController:self];
 		}
 	}];
 }
@@ -64,16 +63,5 @@
 	}
 	return true;
 }
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

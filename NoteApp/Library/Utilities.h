@@ -21,7 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)vaildateIsEmpty:(NSString *)textField;
 
-+ (void)showAlert:(NSString *)text viewController:(UIViewController*)VC;
++ (void)showAlert:(NSString *)text viewController:(UIViewController*)vc;
+
++ (void)navigateToViewControllerWithIdentifier:(NSString *)identifier fromViewController:(UIViewController *)vc;
 
 @end
 

@@ -46,7 +46,8 @@
 	  	if (error != nil) {
 			  [Utilities showAlert:error.localizedDescription viewController:self];
 		  } else {
-			  NSLog(@"user is: %@", authResult.user);
+			  NSLog(@"user is: %@", authResult.user.uid);
+			  [Utilities navigateToViewControllerWithIdentifier:@"NotesViewController" fromViewController:self];
 		  }
 	}];
 }
@@ -58,15 +59,5 @@
 		[self performLogin];
 	}
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
