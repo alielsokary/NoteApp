@@ -20,7 +20,7 @@
 @implementation SignUpViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	[super viewDidLoad];
 	[Utilities styleFilledButton:_signUpButton];
 }
 
@@ -40,7 +40,6 @@
 		if (error != nil) {
 			[Utilities showAlert:error.localizedDescription viewController:self];
 		} else {
-			NSLog(@"user is: %@", authResult.user.uid);
 			[Utilities navigateToViewControllerWithIdentifier:@"NotesViewController" fromViewController:self];
 		}
 	}];

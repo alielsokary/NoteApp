@@ -21,7 +21,7 @@
 @implementation SignInViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	[super viewDidLoad];
 	[Utilities styleFilledButton:_signInButton];
 }
 
@@ -43,12 +43,11 @@
 						   password:_passwordTextField.text
 						 completion:^(FIRAuthDataResult * _Nullable authResult,
 									  NSError * _Nullable error) {
-	  	if (error != nil) {
-			  [Utilities showAlert:error.localizedDescription viewController:self];
-		  } else {
-			  NSLog(@"user is: %@", authResult.user.uid);
-			  [Utilities navigateToViewControllerWithIdentifier:@"NotesViewController" fromViewController:self];
-		  }
+		if (error != nil) {
+			[Utilities showAlert:error.localizedDescription viewController:self];
+		} else {
+			[Utilities navigateToViewControllerWithIdentifier:@"NotesViewController" fromViewController:self];
+		}
 	}];
 }
 

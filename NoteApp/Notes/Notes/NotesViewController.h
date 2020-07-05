@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NotesViewController : UIViewController
+@interface NotesViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end
 

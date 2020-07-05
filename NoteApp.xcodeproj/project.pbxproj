@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4198229A24B205940098580C /* AddNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4198229924B205940098580C /* AddNotesViewController.m */; };
 		41CA5DB324B0A6AE00676BBC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41CA5DB224B0A6AE00676BBC /* GoogleService-Info.plist */; };
 		41CA5DB624B0C65D00676BBC /* OstrichSans-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 41CA5DB424B0C65C00676BBC /* OstrichSans-Heavy.otf */; };
 		41CA5DB724B0C65D00676BBC /* ostrich-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41CA5DB524B0C65D00676BBC /* ostrich-regular.ttf */; };
@@ -16,6 +17,7 @@
 		41CA5DC624B0CEA300676BBC /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA5DC524B0CEA300676BBC /* SignUpViewController.m */; };
 		41CA5DCA24B0D05100676BBC /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA5DC924B0D05100676BBC /* Utilities.m */; };
 		41CA5DCE24B1010900676BBC /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CA5DCD24B1010800676BBC /* NotesViewController.m */; };
+		41D3D1AE24B20D83000D6AA8 /* NoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D3D1AD24B20D83000D6AA8 /* NoteTableViewCell.m */; };
 		41EED31124B0914C00945C94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31024B0914C00945C94 /* AppDelegate.m */; };
 		41EED31724B0914C00945C94 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EED31624B0914C00945C94 /* AuthViewController.m */; };
 		41EED31A24B0914C00945C94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EED31824B0914C00945C94 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4198229824B205940098580C /* AddNotesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNotesViewController.h; sourceTree = "<group>"; };
+		4198229924B205940098580C /* AddNotesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNotesViewController.m; sourceTree = "<group>"; };
 		41CA5DB224B0A6AE00676BBC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41CA5DB424B0C65C00676BBC /* OstrichSans-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OstrichSans-Heavy.otf"; sourceTree = "<group>"; };
 		41CA5DB524B0C65D00676BBC /* ostrich-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-regular.ttf"; sourceTree = "<group>"; };
@@ -39,6 +43,8 @@
 		41CA5DC924B0D05100676BBC /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		41CA5DCC24B1010800676BBC /* NotesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
 		41CA5DCD24B1010800676BBC /* NotesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		41D3D1AC24B20D83000D6AA8 /* NoteTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteTableViewCell.h; sourceTree = "<group>"; };
+		41D3D1AD24B20D83000D6AA8 /* NoteTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteTableViewCell.m; sourceTree = "<group>"; };
 		41EED30C24B0914C00945C94 /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EED30F24B0914C00945C94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41EED31024B0914C00945C94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +72,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		418C42B824B2215800934544 /* NoteCell */ = {
+			isa = PBXGroup;
+			children = (
+				41D3D1AC24B20D83000D6AA8 /* NoteTableViewCell.h */,
+				41D3D1AD24B20D83000D6AA8 /* NoteTableViewCell.m */,
+			);
+			path = NoteCell;
+			sourceTree = "<group>";
+		};
+		4198229724B2057F0098580C /* Add Notes */ = {
+			isa = PBXGroup;
+			children = (
+				4198229824B205940098580C /* AddNotesViewController.h */,
+				4198229924B205940098580C /* AddNotesViewController.m */,
+			);
+			path = "Add Notes";
+			sourceTree = "<group>";
+		};
 		41CA5DBC24B0C73700676BBC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +150,16 @@
 		41CA5DCB24B100E900676BBC /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				41D3D1AB24B20D4D000D6AA8 /* Notes */,
+				4198229724B2057F0098580C /* Add Notes */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		41D3D1AB24B20D4D000D6AA8 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				418C42B824B2215800934544 /* NoteCell */,
 				41CA5DCC24B1010800676BBC /* NotesViewController.h */,
 				41CA5DCD24B1010800676BBC /* NotesViewController.m */,
 			);
@@ -154,8 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				41CA5DCB24B100E900676BBC /* Notes */,
-				41CA5DC724B0CFF100676BBC /* Library */,
 				41CA5DBD24B0CE3300676BBC /* Auth */,
+				41CA5DC724B0CFF100676BBC /* Library */,
 				41EED30F24B0914C00945C94 /* AppDelegate.h */,
 				41EED31024B0914C00945C94 /* AppDelegate.m */,
 				41EED31824B0914C00945C94 /* Main.storyboard */,
@@ -309,7 +343,9 @@
 				41CA5DC124B0CE7800676BBC /* SignInViewController.m in Sources */,
 				41EED31724B0914C00945C94 /* AuthViewController.m in Sources */,
 				41CA5DC624B0CEA300676BBC /* SignUpViewController.m in Sources */,
+				4198229A24B205940098580C /* AddNotesViewController.m in Sources */,
 				41EED31124B0914C00945C94 /* AppDelegate.m in Sources */,
+				41D3D1AE24B20D83000D6AA8 /* NoteTableViewCell.m in Sources */,
 				41EED32224B0914D00945C94 /* main.m in Sources */,
 				41CA5DCA24B0D05100676BBC /* Utilities.m in Sources */,
 			);

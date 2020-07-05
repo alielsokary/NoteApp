@@ -7,12 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "AuthViewController.h"
-#import "NotesViewController.h"
+#import "Utilities.h"
 @import Firebase;
 
 @interface AppDelegate ()
-@property(strong, nonatomic) FIRAuthStateDidChangeListenerHandle handle;
 
 @end
 
@@ -20,9 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	[FIRApp configure];
-
 	[self handleAuthenticatedState];
-
 	return YES;
 }
 
@@ -41,6 +37,5 @@
 	self.window.rootViewController = vc;
 	[self.window makeKeyAndVisible];
 }
-
 
 @end
